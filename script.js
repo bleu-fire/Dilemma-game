@@ -1,5 +1,5 @@
 
-// Elements
+// element
 const cooperateBtn = document.getElementById("cooperate");
 const betrayBtn = document.getElementById("betray");
 const resetBtn = document.getElementById("reset");
@@ -11,12 +11,12 @@ const historyEl = document.getElementById("history");
 const playerScoreEl = document.getElementById("playerScore");
 const computerScoreEl = document.getElementById("computerScore");
 
-// Variables
+// variables
 let playerScore = 0;
 let computerScore = 0;
 let round = 0;
 
-// Payoff table
+// Payoff
 const payoff = {
     "cooperate-cooperate": [3, 3],
     "cooperate-betray": [0, 5],
@@ -24,7 +24,7 @@ const payoff = {
     "betray-betray": [1, 1]
 };
 
-// Get computer choice
+// Get-computer-choice
 function getComputerChoice() {
     const choices = ["cooperate", "betray"];
     const randomIndex = Math.floor(Math.random() * choices.length);

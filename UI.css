@@ -38,8 +38,23 @@ table{
     
     
 }
-.buttons button:hover{
-  background-color: #f2f608
+.buttons #cooperate{
+    
+}
+.buttons  #cooperate:hover{
+  background-color: #15c30b
+}
+.buttons #betray{
+    
+}
+.buttons  #betray:hover{
+  background-color: #ea1c18
+}
+.buttons #reset{
+    
+}
+.buttons  #reset:hover{
+  background-color: #909f8f
 }
 .game p{
     padding: auto;
