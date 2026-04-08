@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>presion-all</title>
+    <link rel="stylesheet" href="UI.css">
+    <title>Prisoner's Dilemma</title>
 </head>
 <body>
-    
+<div class="game">
+    <h1>Prisoner's Dilemma Game</h1>
+    <p>Choose cooperate or betray. The result depends on both players.</p>
+
+    <table border="1">
+      <tr>
+        <th></th>
+        <th>Cooperate</th>
+        <th>Betray</th>
+      </tr>
+      <tr>
+        <th>Cooperate</th>
+        <td>You get 3 pts — Computer gets 3 pts</td>
+        <td>You get 0 pts — Computer gets 5 pts</td>
+      </tr>
+      <tr>
+        <th>Betray</th>
+        <td>You get 5 pts — Computer gets 0 pts</td>
+        <td>You get 1 pt — Computer gets 1 pt</td>
+      </tr>
+    </table>
+
+    <div class="buttons">
+        <button id="cooperate">Cooperate</button>
+        <button id="betray">Betray</button>
+        <button id="reset">Reset</button>
+    </div>
+
+    <p id="result">Result: </p>
+    <p>Score: <span id="playerScore">0</span> - <span id="computerScore">0</span></p>
+    <p>Round: <span id="round">0</span></p>
+
+    <ul id="history">
+    </ul>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
